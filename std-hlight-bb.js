@@ -1,6 +1,6 @@
 with( HLight ) lang.bb= FPipe( FConcurentLang( new function(){
 
-	var wrapGhost= TagWrapper( 'i:hlight-bb-ghost' )
+	var wrapGhost= TagWrapper( 'std:hlight-bb-ghost' )
 
 	this[ '(\\[(b)\\])([\\s\\S]*?)(\\[\\/b\\])' ]=
 	this[ '(\\[(i)\\])([\\s\\S]*?)(\\[\\/i\\])' ]=
@@ -11,10 +11,10 @@ with( HLight ) lang.bb= FPipe( FConcurentLang( new function(){
 		,	i: 'italic'
 		,	u: 'underline'
 		}[ mode ]
-		content= TagWrapper( 'i:hlight-bb-' + tagMod )( lang.bb( content ) )
+		content= TagWrapper( 'std:hlight-bb-' + tagMod )( lang.bb( content ) )
 		prefix= wrapGhost( prefix )
 		postfix= wrapGhost( postfix )
 		return prefix + content + postfix
 	}
 
-}), TagWrapper( 'i:hlight-bb' ))
+}), TagWrapper( 'std:hlight-bb' ))
