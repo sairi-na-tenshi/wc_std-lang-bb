@@ -1,0 +1,27 @@
+std\:lang-bb-ghost {
+	color: #ddd;
+}
+
+std\:lang-bb-bold {
+	font-weight: bold;
+}
+
+std\:lang-bb-italic {
+	font-style: italic;
+}
+
+std\:lang-bb-underline {
+	text-decoration: underline;
+}
+
+std\:lang-bb-code {
+	font-family: monospace;
+}
+
+std\:lang-bb-quote {
+	color: green;
+}
+
+std\:lang-bb-image {
+	color: #99f;
+}
